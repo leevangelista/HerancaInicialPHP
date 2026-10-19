@@ -31,4 +31,10 @@ $turma->adicionarAluno($aluno3);
 // Exibindo resumo e lista
 $turma->exibirResumo();
 $turma->listarAlunos();
+
+// Exibir dados polimorfismo
+$pessoas = [$professor, $aluno1, $aluno2];
+foreach ($pessoas as $pessoa) {
+    $pessoa->exibirDados(); // cada objeto responde do seu jeito
+}
 ?>
